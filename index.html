@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lookup Assignment</title>
+
+<!-- <link rel="stylesheet" href="reset.css">  -->
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<!-- Firebase Reference -->
+
+ <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+  
+ <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+</head>
+
+<body>
+
+<header>Rock Paper Scissors</header>
+
+<div class="mainDiv">
+  <div class="container-fluid">
+    
+	<div class="row" id="playerInfo">
+   	 	<div class="input-group">
+      		<input type="text" class="form-control" placeholder="Enter your name...">
+      		<span class="input-group-btn">
+      			<button id="startGame" class="btn btn-default" type="button">Start</button>
+      		</span>
+    	</div>
+
+  	</div>
+
+<div class="row">
+    <div class="col-md-12" id="turnDiv"></div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4">
+    		<div class="col-md-12" id="player1Div">
+    				<div id="player1Name">Waiting for Player 1</div><br/>
+    				
+    				<div id="p1-weapons">
+    						<div id="Rock">Rock</div>
+    						<div id="Paper">Paper</div>
+    						<div id="Scissors">Scissors</div>
+    					</a>
+    				</div>
+
+    				<br/>
+
+    				Wins:<span id="p1-wins">0</span>  Losses:<span id="p1-losses">0</span>
+
+    	    </div>
+    </div>
+    <div class="col-md-4" id="resultsDiv"><div class="col-md-12" id="resDiv">&nbsp;</div>
+			<div class="col-md-12" ></div>
+			<div class="col-md-12" id="winnerDiv">&nbsp;</div>
+    </div>
+    <div class="col-md-4" id="player2Div">
+    		<div class="col-md-12" id="player2Div">
+    				<div id="player2Name">Waiting for Player 2</div><br/>
+    				
+    				<div id="p2-weapons">
+    						<div id="Rock">Rock</div>
+    						<div id="Paper">Paper</div>
+    						<div id="Scissors">Scissors</div>
+    					</a>
+    				</div>
+
+    				<br/>
+
+    				Wins:<span id="p2-wins">0</span>  Losses:<span id="p2-losses">0</span>
+
+    	    </div>
+
+
+    </div>
+    
+   </div> 
+
+<br/><br/>
+<div id="chatDiv">
+       <form method="post">
+        <textarea id="chatText" readonly class="form-control" rows="15" style="min-width: 100%"></textarea>
+        <br />
+        <input type="text" id="textMessage" class="form-control" placeholder="Send message...">
+      		<span class="input-group-btn">
+      			<button class="btn btn-default" id="sendText" type="button">Send</button>
+      		</span>
+</form>
+
+</div>  
+ 
+
+</div>
+
+<span id="myplayerNum"></span>
+<span id="myplayerName"></span>
+<span id="myplayerChoice"></span>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/javascript/app.js"></script>
+
+
+</body>
+</html>
